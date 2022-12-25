@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import heroImg from '../../assets/images/hero-img.png'
 
 export const StyledHero = styled.section`
