@@ -18,12 +18,10 @@ export const StyledImg = styled.div`
 `
 
 export const ContentWrapepr = styled.div`
-  position: absolute;
-  top: 8.5%;
-  left: 31.5%;
+  padding: 246px 0;
+  margin: 0 auto;
 
-  padding: 245px 82px;
-  width: 706px;
+  width: 542px;
 `
 
 export const StyledTitle = styled.h2`
