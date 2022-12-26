@@ -18,10 +18,17 @@ export const theme = {
     light: '#F4F5F5',
   },
   radii: ['3px', '80px', '50%'],
-
   fonts: {
     body: '"Public Sans", sans-serif',
     heading: '"Libre Baskerville", serif',
+  },
+  fontWeights: {
+    regular: 400,
+    medium: 500,
+    SemiBold: 600,
+    bold: 700,
+    extraBold: 800,
+    black: 900,
   },
   fontSizes: {
     fs9: '9px',
@@ -50,14 +57,7 @@ export const theme = {
     fs38: '38px',
     fs60: '60px',
   },
-  fontWeights: {
-    regular: 400,
-    medium: 500,
-    SemiBold: 600,
-    bold: 700,
-    extraBold: 800,
-    black: 900,
-  },
+
   lineHeights: {
     lh10: '1',
     lh11: '1.1',
