@@ -17,19 +17,8 @@ export const theme = {
     white: '#FFFFFF',
     light: '#F4F5F5',
   },
-  shadow: '0px 2px 6px 2px rgba(92, 112, 133, 0.1)',
   radii: ['3px', '80px', '50%'],
-  breakpoints: [
-    '320px',
-    '420px',
-    '520px',
-    '620px',
-    '720px',
-    '820px',
-    '920px',
-    '1020px',
-    '1080px',
-  ],
+
   fonts: {
     body: '"Public Sans", sans-serif',
     heading: '"Libre Baskerville", serif',
