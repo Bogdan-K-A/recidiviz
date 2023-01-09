@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import heroImg from '../../assets/images/hero-img.png'
 
 export const StyledHero = styled.section`
@@ -21,7 +22,7 @@ export const StyledContentWrapper = styled.div`
   height: 344px;
 `
 
-export const StyledTitle = styled.h1`
+export const StyledTitle = styled(motion.h1)`
   margin-bottom: 29px;
 
   font-family: ${(p) => p.theme.fonts.heading};

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from '../common/Container/Container'
 import { Button } from '../ui-component/Button/Button'
-import { Flex } from '../ui-component/Flex/Flex'
+import { titleAnimation } from './animatin'
 import {
   StyledHero,
   StyledContentWrapper,
@@ -13,14 +13,22 @@ import {
 } from './Hero.styled'
 
 export const Hero = () => {
+  const trustedItem = [
+    'Idaho',
+    'Maine',
+    'Missouri',
+    'North Dakota',
+    'Pennsylvania',
+    'Tennessee',
+  ]
+
+  const title =
+    'Every person who safely transitions back to the community is a step toward a better society.'
   return (
     <StyledHero>
       <Container>
         <StyledContentWrapper>
-          <StyledTitle>
-            Every person who safely transitions back to the community is a step
-            toward a better society.
-          </StyledTitle>
+          <StyledTitle>{titleAnimation(title)}</StyledTitle>
           <StyledText>
             Criminal justice leaders use Recidiviz to get a real-time picture of
             their system, diagnose issues, and drive meaningful changes.
@@ -32,12 +40,9 @@ export const Hero = () => {
         <WrapperList>
           <p>Trusted in:</p>
           <StyledList>
-            <StyledItem>Idaho</StyledItem>
-            <StyledItem>Maine</StyledItem>
-            <StyledItem>Missouri</StyledItem>
-            <StyledItem>North Dakota</StyledItem>
-            <StyledItem>Pennsylvania</StyledItem>
-            <StyledItem>Tennessee</StyledItem>
+            {trustedItem.map((item) => (
+              <StyledItem key={item}>{item}</StyledItem>
+            ))}
           </StyledList>
         </WrapperList>
       </Container>

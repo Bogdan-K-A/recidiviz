@@ -12,46 +12,44 @@ import partnerLogo4 from '../../../assets/images/partnersLogo/IMAGE-4.png'
 import partnerLogo5 from '../../../assets/images/partnersLogo/IMAGE-5.png'
 
 export const PartnerLogoList = () => {
+  const partnersItem = [
+    {
+      img: partnerLogo0,
+      text: 'TED Talks',
+    },
+    {
+      img: partnerLogo1,
+      text: 'The New York Times',
+    },
+    {
+      img: partnerLogo2,
+      text: 'StateScoop',
+    },
+    {
+      img: partnerLogo3,
+      text: 'Associated Press',
+    },
+    {
+      img: partnerLogo4,
+      text: 'Time',
+    },
+    {
+      img: partnerLogo5,
+      text: 'Freethink',
+    },
+  ]
   return (
     <>
       <Container>
         <StyledList>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo0} alt="" />
-              <p>TED Talks</p>
-            </Flex>
-          </StyledItem>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo1} alt="" />
-              <p>The New York Times</p>
-            </Flex>
-          </StyledItem>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo2} alt="" />
-              <p>StateScoop</p>
-            </Flex>
-          </StyledItem>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo3} alt="" />
-              <p>Associated Press</p>
-            </Flex>
-          </StyledItem>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo4} alt="" />
-              <p>Time</p>
-            </Flex>
-          </StyledItem>
-          <StyledItem>
-            <Flex align="center">
-              <img src={partnerLogo5} alt="" />
-              <p>Freethink</p>
-            </Flex>
-          </StyledItem>
+          {partnersItem.map(({ img, text }) => (
+            <StyledItem>
+              <Flex align="center">
+                <img src={img} alt={text} />
+                <p>{text}</p>
+              </Flex>
+            </StyledItem>
+          ))}
         </StyledList>
       </Container>
     </>
