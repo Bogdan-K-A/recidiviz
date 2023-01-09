@@ -7,32 +7,26 @@ import {
 } from './ProductList.styled'
 
 export const ProductList = () => {
+  const productItem = [
+    { link: '#', text: 'Our Approach' },
+    { link: '#', text: 'Corrections Leaders' },
+    { link: '#', text: 'Corrections Staff' },
+    { link: '#', text: 'Policy Impact' },
+    { link: '#', text: 'Public Data' },
+    { link: '#', text: 'Security' },
+    { link: '#', text: 'Testimonials' },
+  ]
+
   return (
     <StyledProduct>
       <StyledTitle>PRODUCT</StyledTitle>
 
       <StyledList>
-        <StyledItem>
-          <a href="">Our Approach</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Corrections Leaders</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Corrections Staff</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Policy Impact</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Public Data</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Security</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Testimonials</a>
-        </StyledItem>
+        {productItem.map(({ link, text }) => (
+          <StyledItem>
+            <a href={link}>{text}</a>
+          </StyledItem>
+        ))}
       </StyledList>
     </StyledProduct>
   )

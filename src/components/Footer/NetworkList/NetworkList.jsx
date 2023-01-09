@@ -7,23 +7,22 @@ import {
 } from './NetworkList.styled'
 
 export const NetworkList = () => {
+  const networkItem = [
+    { link: '#', text: 'Twitter' },
+    { link: '#', text: 'Medium' },
+    { link: '#', text: 'GitHub' },
+    { link: '#', text: 'LinkedIn' },
+  ]
   return (
     <StyledNetwork>
       <StyledTitle>NETWORK</StyledTitle>
 
       <StyledList>
-        <StyledItem>
-          <a href="">Twitter</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Medium</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">GitHub</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">LinkedIn</a>
-        </StyledItem>
+        {networkItem.map(({ link, text }) => (
+          <StyledItem>
+            <a href={link}>{text}</a>
+          </StyledItem>
+        ))}
       </StyledList>
     </StyledNetwork>
   )

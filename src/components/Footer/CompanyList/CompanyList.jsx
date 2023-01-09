@@ -7,35 +7,26 @@ import {
 } from './CompanyList.styled'
 
 export const CompanyList = () => {
+  const companyItem = [
+    { link: '#', text: 'About' },
+    { link: '#', text: 'Team' },
+    { link: '#', text: 'Supporters' },
+    { link: '#', text: 'Diversity' },
+    { link: '#', text: 'Blog' },
+    { link: '#', text: 'Press' },
+    { link: '#', text: 'Careers' },
+    { link: '#', text: 'Contact' },
+  ]
   return (
     <StyledCompany>
       <StyledTitle>COMPANY</StyledTitle>
 
       <StyledList>
-        <StyledItem>
-          <a href="">About</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Team</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Supporters</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Diversity</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Blog</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Press</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Careers</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Contact</a>
-        </StyledItem>
+        {companyItem.map(({ link, text }) => (
+          <StyledItem>
+            <a href={link}>{text}</a>
+          </StyledItem>
+        ))}
       </StyledList>
     </StyledCompany>
   )

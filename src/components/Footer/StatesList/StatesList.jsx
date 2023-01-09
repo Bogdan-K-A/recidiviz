@@ -2,35 +2,26 @@ import React from 'react'
 import { StyledItem, StyledList, StyledTitle } from './StatesList.styled'
 
 export const StatesList = () => {
+  const statesItem = [
+    { link: '#', text: 'Overview' },
+    { link: '#', text: 'Idaho' },
+    { link: '#', text: 'Maine' },
+    { link: '#', text: 'Michigan' },
+    { link: '#', text: 'Missouri' },
+    { link: '#', text: 'North Dakota' },
+    { link: '#', text: 'Pennsylvania' },
+    { link: '#', text: 'Tennessee' },
+  ]
   return (
     <div>
       <StyledTitle>STATES</StyledTitle>
 
       <StyledList>
-        <StyledItem>
-          <a href="">Overview</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Idaho</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Maine</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Michigan</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Missouri</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">North Dakota</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Pennsylvania</a>
-        </StyledItem>
-        <StyledItem>
-          <a href="">Tennessee</a>
-        </StyledItem>
+        {statesItem.map(({ link, text }) => (
+          <StyledItem>
+            <a href={link}>{text}</a>
+          </StyledItem>
+        ))}
       </StyledList>
     </div>
   )
