@@ -1,22 +1,26 @@
-import React from 'react'
-import { Section } from '../common/Section/Section'
-import { Button } from '../ui-component/Button/Button'
-import img1 from '../../assets/images/img1.png'
-import img2 from '../../assets/images/img2.png'
+import React from "react";
+import { Section } from "../common/Section/Section";
+import { Button } from "../ui-component/Button/Button";
+import img1 from "../../assets/images/img1.png";
+import img2 from "../../assets/images/img2.png";
 import {
   ContentWrapper,
   ImgWrapper,
   StyledText,
   StyledTitle,
-} from './Human.styled'
-import { Container } from '../common/Container/Container'
-import { Flex } from '..//ui-component/Flex/Flex'
+  FlexContainer,
+} from "./Human.styled";
+import { Container } from "../common/Container/Container";
 
 export const Human = () => {
   return (
-    <Section padding="80px 0" background={(p) => p.theme.colors.light}>
+    <Section
+      id="human"
+      padding="80px 0"
+      background={(p) => p.theme.colors.light}
+    >
       <Container>
-        <Flex justify="space-between">
+        <FlexContainer>
           <ContentWrapper>
             <StyledTitle>A human–centered definition of success.</StyledTitle>
             <StyledText>
@@ -36,8 +40,8 @@ export const Human = () => {
             <img src={img1} alt="" />
             <img src={img2} alt="" />
           </ImgWrapper>
-        </Flex>
+        </FlexContainer>
       </Container>
     </Section>
-  )
-}
+  );
+};

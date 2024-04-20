@@ -1,26 +1,72 @@
-import React from 'react'
-import { StyledList, StyledItem, StyledNav } from './NavBar.styled'
+import React from "react";
+import { StyledList, StyledItem, StyledNav } from "./NavBar.styled";
+import { Link } from "react-scroll";
 
-export const NavBar = () => {
+export const NavBar = ({ toggle }) => {
   return (
     <StyledNav>
       <StyledList>
         <StyledItem>
-          <a href="">States</a>
+          <Link
+            onClick={toggle}
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={500}
+          >
+            About
+          </Link>
         </StyledItem>
         <StyledItem>
-          <a href="">Tools</a>
+          <Link
+            onClick={toggle}
+            to="partners"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={500}
+          >
+            Partners
+          </Link>
         </StyledItem>
         <StyledItem>
-          <a href="">People</a>
+          <Link
+            onClick={toggle}
+            to="blog"
+            spy={true}
+            smooth={true}
+            offset={400}
+            duration={500}
+          >
+            Information
+          </Link>
         </StyledItem>
         <StyledItem>
-          <a href="">Learn More</a>
+          <Link
+            onClick={toggle}
+            to="news"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            News
+          </Link>
         </StyledItem>
         <StyledItem>
-          <a href="">Donate</a>
+          <Link
+            onClick={toggle}
+            to="map"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Map
+          </Link>
         </StyledItem>
       </StyledList>
     </StyledNav>
-  )
-}
+  );
+};

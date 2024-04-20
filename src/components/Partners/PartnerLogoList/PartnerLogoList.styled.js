@@ -1,11 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import { SwiperSlide } from "swiper/react";
+import "swiper/css";
 
-export const StyledList = styled.ul`
-  display: flex;
-  justify-content: space-between;
-`
-
-export const StyledItem = styled.li`
+export const StyledItem = styled(SwiperSlide)`
   display: flex;
   flex-direction: column;
   color: ${(p) => p.theme.colors.text};
@@ -18,7 +15,7 @@ export const StyledItem = styled.li`
   }
 
   &::before {
-    content: '';
+    content: "";
     display: inline-block;
 
     width: 165px;
@@ -26,4 +23,4 @@ export const StyledItem = styled.li`
     margin-bottom: 17px;
     background-color: ${(p) => p.theme.colors.btnBorder};
   }
-`
+`;

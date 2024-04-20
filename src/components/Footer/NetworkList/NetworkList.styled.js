@@ -1,8 +1,12 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledNetwork = styled.div`
-  margin-left: auto;
-`
+  margin-left: 0;
+
+  @media (min-width: 640px) {
+    margin-left: auto;
+  }
+`;
 export const StyledTitle = styled.p`
   margin-bottom: 24px;
 
@@ -13,18 +17,18 @@ export const StyledTitle = styled.p`
   text-transform: uppercase;
 
   color: ${(p) => p.theme.colors.titleFooterColor};
-`
+`;
 
 export const StyledList = styled.ul`
   ::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 16px;
     height: 1px;
     background: ${(p) => p.theme.colors.dividerColor};
     margin-bottom: 23px;
   }
-`
+`;
 export const StyledItem = styled.li`
   font-size: ${(p) => p.theme.fontSizes.fs15};
 
@@ -32,4 +36,4 @@ export const StyledItem = styled.li`
   :not(:last-child) {
     margin-bottom: 16px;
   }
-`
+`;

@@ -1,7 +1,7 @@
-import React from 'react'
-import { Section } from '../common/Section/Section'
-import { PartnerLogoList } from './PartnerLogoList/PartnerLogoList'
-import { PartnerNameList } from './PartnerNameList/PartnerNameList'
+import React from "react";
+import { Section } from "../common/Section/Section";
+import { PartnerLogoList } from "./PartnerLogoList/PartnerLogoList";
+import { PartnerNameList } from "./PartnerNameList/PartnerNameList";
 
 import {
   StyledImg,
@@ -9,11 +9,11 @@ import {
   CenterWrapper,
   StyledText,
   StyledTitle,
-} from './Partners.styled'
+} from "./Partners.styled";
 
 export const Partners = () => {
   return (
-    <Section padding="24px 0 17px 0">
+    <Section id="partners" padding="24px 0 17px 0">
       <CenterWrapper>
         <PartnerLogoList />
         <StyledImg>
@@ -33,5 +33,5 @@ export const Partners = () => {
       </CenterWrapper>
       <PartnerNameList />
     </Section>
-  )
-}
+  );
+};

@@ -23,7 +23,7 @@ export const CompanyList = () => {
 
       <StyledList>
         {companyItem.map(({ link, text }) => (
-          <StyledItem>
+          <StyledItem key={text}>
             <a href={link}>{text}</a>
           </StyledItem>
         ))}

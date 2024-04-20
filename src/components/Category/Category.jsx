@@ -1,19 +1,19 @@
-import React from 'react'
-import { Section } from '../common/Section/Section'
-import { Title } from '../ui-component/Title/Title'
+import React from "react";
+import { Section } from "../common/Section/Section";
+import { Title } from "../ui-component/Title/Title";
 import {
   CatigoryItem,
   CatigoryList,
-  ContentWrapper,
   StyledCircle,
   StyledText,
   TitleWrapper,
-} from './Category.styled'
+} from "./Category.styled";
+import { Container } from "../common/Container/Container";
 
 export const Category = () => {
   return (
-    <Section padding="120px 0 117px 0">
-      <ContentWrapper>
+    <Section id="about" padding="120px 0 117px 0">
+      <Container>
         <TitleWrapper>
           <Title>
             We are a non-profit that partners with state criminal justice
@@ -39,7 +39,7 @@ export const Category = () => {
             </StyledText>
           </CatigoryItem>
         </CatigoryList>
-      </ContentWrapper>
+      </Container>
     </Section>
-  )
-}
+  );
+};
