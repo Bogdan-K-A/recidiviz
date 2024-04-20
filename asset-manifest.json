@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/recidiviz/static/js/main.8e97b5d5.js",
+    "main.css": "/recidiviz/static/css/main.392b071d.css",
+    "main.js": "/recidiviz/static/js/main.aa6f2f0d.js",
     "static/media/hero-img.png": "/recidiviz/static/media/hero-img.f6c6aacbb52ad45c0406.png",
     "static/media/img4.png": "/recidiviz/static/media/img4.e8a5a9d78f46ffdef4e9.png",
     "static/media/img3.png": "/recidiviz/static/media/img3.b4aecfbdb49d5ac7f726.png",
@@ -15,10 +16,11 @@
     "static/media/IMAGE.svg": "/recidiviz/static/media/IMAGE.eaf2e81e0c5cc0528bb32184b49ed339.svg",
     "static/media/IMAGE-5.svg": "/recidiviz/static/media/IMAGE-5.af8f49a5f8e8a153c8cbf917964809f0.svg",
     "index.html": "/recidiviz/index.html",
-    "static/media/logo.svg": "/recidiviz/static/media/logo.0460347f351c10900b2e5f1998cdddd2.svg",
-    "main.8e97b5d5.js.map": "/recidiviz/static/js/main.8e97b5d5.js.map"
+    "main.392b071d.css.map": "/recidiviz/static/css/main.392b071d.css.map",
+    "main.aa6f2f0d.js.map": "/recidiviz/static/js/main.aa6f2f0d.js.map"
   },
   "entrypoints": [
-    "static/js/main.8e97b5d5.js"
+    "static/css/main.392b071d.css",
+    "static/js/main.aa6f2f0d.js"
   ]
 }
