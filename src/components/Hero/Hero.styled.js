@@ -4,9 +4,10 @@ import heroImg from "../../assets/images/hero-img.png";
 
 export const StyledHero = styled.section`
   position: relative;
+  top: -77px;
   width: 100%;
   height: 776px;
-  background: ${(p) => p.theme.colors.darkGreen} url(${heroImg}) no-repeat
+  background: ${({ theme }) => theme.colors.darkGreen} url(${heroImg}) no-repeat
     center/cover;
 `;
 

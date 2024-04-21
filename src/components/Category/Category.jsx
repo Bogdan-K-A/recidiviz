@@ -12,7 +12,7 @@ import { Container } from "../common/Container/Container";
 
 export const Category = () => {
   return (
-    <Section id="about" padding="120px 0 117px 0">
+    <Section id="about" padding="0 0 117px 0">
       <Container>
         <TitleWrapper>
           <Title>

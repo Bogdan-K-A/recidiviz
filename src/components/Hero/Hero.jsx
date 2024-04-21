@@ -27,7 +27,7 @@ export const Hero = () => {
   const title = titleAnimation(textTitle);
 
   return (
-    <StyledHero>
+    <StyledHero id="home">
       <Container>
         <StyledContentWrapper>
           <div>

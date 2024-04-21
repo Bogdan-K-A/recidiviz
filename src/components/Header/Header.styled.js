@@ -1,14 +1,18 @@
 import styled from "styled-components";
+import { Link } from "react-scroll";
 
 export const StyledHeader = styled.header`
   width: 100%;
-  height: 67px;
-  position: absolute;
+
+  position: sticky;
   top: 0;
-  right: 0;
-  z-index: 1;
+  background: ${({ scroll, theme }) => {
+    return scroll >= 80 ? theme.colors.bgHeader : "transparent";
+  }};
+
+  z-index: 99;
 `;
-export const StyledLogo = styled.a`
+export const StyledLogo = styled(Link)`
   padding: 20px 0;
 `;
 

@@ -12,17 +12,35 @@ import { NavBar } from "./NavBar/NavBar";
 import { Flex } from "../ui-component/Flex/Flex";
 import { RxHamburgerMenu } from "react-icons/rx";
 import MobileMenu from "./MobileMenu/MobileMenu";
+import { useEffect } from "react";
 
 export const Header = () => {
+  const [sticky, setSticky] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setSticky(window.scrollY >= 80);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.addEventListener("scroll", handleScroll);
+    };
+  });
 
   const toggle = () => setIsOpen((prev) => !prev);
 
   return (
-    <StyledHeader>
+    <StyledHeader scroll={window.scrollY}>
       <Container>
         <Flex justify="space-between" align="center" padding="26px 0">
-          <StyledLogo href="#">
+          <StyledLogo
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+          >
             <img src={headerLogo} alt="" />
           </StyledLogo>
           <Flex align="center">

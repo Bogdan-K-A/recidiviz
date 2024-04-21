@@ -12,7 +12,7 @@ export const NavBar = ({ toggle }) => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-150}
             duration={500}
           >
             About
@@ -24,7 +24,7 @@ export const NavBar = ({ toggle }) => {
             to="partners"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-70}
             duration={500}
           >
             Partners
@@ -36,7 +36,7 @@ export const NavBar = ({ toggle }) => {
             to="blog"
             spy={true}
             smooth={true}
-            offset={400}
+            offset={600}
             duration={500}
           >
             Information
